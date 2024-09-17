@@ -1,0 +1,227 @@
+body {
+    background-image: url("./testbild.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.sidoflik {
+    font-family: 'Space Mono';
+    background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(251, 250, 250));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    width: 50rem;
+    margin: auto;
+}
+
+
+.p-box {
+    background-color: rgb(250, 236, 247);
+    border-radius: 20px;
+    box-shadow: 0 50px 8px rgba(160, 137, 8, 0.1);
+    padding: 5px;
+    text-align: center;
+    max-width: 213px;
+    width: 100%;
+    height: 333px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+button {
+    font-family: 'Space Mono', monospace;
+    background: linear-gradient(135deg, rgb(243, 210, 243), rgb(239, 220, 236));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 1px solid rgb(243, 210, 243);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: auto;
+}
+
+
+button:hover {
+    background: rgb(243, 210, 243);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+h1 {
+    font-family: 'Space Mono';
+    background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(239, 200, 236));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    margin: 0;
+}
+p {
+    font-family: 'Space Mono';
+    background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(235, 97, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    margin: 10px 0 0;
+}
+
+
+.inledning {
+    color: pink;
+    font-family: 'Space Mono';
+    background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(235, 97, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+
+.inledning2 {
+    color: pink;
+    font-family: 'Space Mono';
+    background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(235, 97, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 15px;
+}
+
+
+.video {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 3rem;
+    margin-right: 15rem;
+}
+
+
+.about-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    max-width: 400px;
+
+
+}
+
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 43em;
+    position: relative;
+    width: 63rem;
+}
+
+
+.square {
+    display: flex;
+    flex-direction: column;
+    font-size: 29px;
+    padding: 55px;
+    background-color: rgb(252, 199, 232);
+    color: white;
+    border-radius: 190px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 40px 10px rgba(250, 0, 217, 0.2);
+    bottom: 300px;
+    word-wrap: break-word;
+}
+
+
+.info {
+    font-size: 16px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+.square:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+
+.info:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+
+.bild-på-linda {
+    width: 100%;
+   
+}
+
+
+.footer p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Space Mono';
+    background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(243, 239, 243));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.footer {
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(rgb(238, 203, 223), rgb(218, 109, 172));
+    color: azure;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+
+.footer-content {
+    text-align: center;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;/ padding: 0;
+}
+
+
+
+.linkedinicon {
+    height: 2rem;
+    width: 2.5rem;
+}
+
+
+.nummer:hover {
+    color: blue;
+    cursor: pointer;
+}
+.gmail {
+    height: 25px;
+    width: 55px;
+}
+

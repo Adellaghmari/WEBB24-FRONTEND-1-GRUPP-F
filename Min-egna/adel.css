@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ 
+ /* Body stilar */
+ body {
+    font-family: 'Georgia', serif; /* En mer elegant font */
+    background-color: #f7f7f7; /* Ljusare bakgrundsfärg */
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centrerar allt horisontellt */
+    align-items: center; /* Centrerar allt vertikalt */
+    flex-direction: column; /* Lägger elementen i en kolumn */
+    min-height: 100vh; /* Minsta höjden är hela skärmen */
+    text-align: center; /* Gör att all text är centrerad */
+    line-height: 1.6;
+ }
+ 
+ 
+ /* Huvudinnehåll */
+ main {
+    max-width: 900px; /* Maximal bredd på innehållet */
+    margin: 50px auto; /* Marginal för att centrera innehållet */
+    background-color: white; /* Vit bakgrund */
+    padding: 40px;
+    border-radius: 10px; /* Rundade hörn */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Lägger till skugga */
+ }
+ 
+ 
+ /* Profil och text sektion */
+ .about {
+    display: flex;
+    flex-direction: column; /* Ändra till kolumn för att centrera */
+    align-items: center; /* Centrerar allt innehåll i mitten */
+    gap: 30px; /* Avstånd mellan profilbild och text */
+ }
+ 
+ 
+ /* Profilbild */
+ .profile-image {
+    width: 200px; /* Bredd på bilden */
+    height: 200px; /* Höjd på bilden */
+    border-radius: 50%; /* Gör bilden rund */
+    object-fit: cover; /* Ser till att bilden fyller hela ytan */
+    transition: transform 0.3s ease; /* Lägger till en zoom-effekt vid hover */
+}
+
+
+/* Förstorings-effekt på profilbilden när man hovrar över */
+.profile-image:hover {
+   transform: scale(1.1); /* Zoomar in bilden */
+}
+
+
+/* Textsektionen */
+.text-content {
+   max-width: 600px; /* Begränsar bredden på texten för bättre läsbarhet */
+}
+
+
+/* Namnet (rubrik) */
+.text-content h2 {
+   font-size: 28px;
+   color: #333;
+   margin-bottom: 20px; /* Avstånd under rubriken */
+}
+
+
+/* Text (stycken) */
+.text-content p {
+   margin-bottom: 20px; /* Avstånd mellan stycken */
+}
+
+
+/* Större textstorlek för första stycket */
+.text-content p:first-of-type {
+   font-size: 20px;
+}
+
+
+/* Mindre textstorlek för andra stycket */
+.text-content p:last-of-type {
+   font-size: 18px;
+}
+
+
+/* Sidfoten */
+footer {
+   background-color: transparent; /* Ingen bakgrundsfärg */
+   color: #333; /* Textfärg */
+   text-align: center; /* Centrerar texten */
+   padding: 10px 0; /* Avstånd ovan och under texten */
+   margin-top: auto; /* Skjuter ner sidfoten till botten */
+   width: 100%; /* Se till att sidfoten täcker hela sidbredden */
+   position: relative; /* Gör att sidfoten håller sin plats */
+}
+
+* Stilar för kontaktformuläret */
+.contact-form {
+   background-color: #fff; /* Vit bakgrund för formuläret */
+   padding: 1.5rem; /* Inre avstånd runt innehållet */
+   border-radius: 8px; /* Rundade hörn */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skugga runt formuläret */
+   width: 500px; /* Bestämmer bredden på formuläret */
+   display: grid; /* Grid-layout för att ordna innehållet */
+   grid-template-rows: auto 1fr auto; /* Delar upp grid-layouten i tre rader */
+   gap: 2rem; /* Avstånd mellan raderna */
+}
+
+
+/* Rubrik för formuläret */
+h1 {
+   text-align: center; /* Centrera rubriken */
+   background-color: #007BFF; /* Blå bakgrundsfärg */
+   color: white; /* Vit text */
+   padding: 0.5rem; /* Avstånd runt texten */
+   margin: 0; /* Ingen marginal */
+}
+
+
+/* Grid-layout för alla etiketter och inmatningsfält */
+.form-grid {
+   display: grid; /* Grid-layout */
+   grid-template-columns: repeat(2, 1fr); /* Två kolumner med lika breda delar */
+   grid-template-rows: repeat(7, auto); /* Sju rader med automatiskt höjd */
+   gap: 1.5rem; /* Avstånd mellan grid-elementen */
+   background-color: #e6f7ff; /* Ljusblå bakgrund för grid-layouten */
+}
+
+
+/* Stilar för alla etiketter (labels) */
+.form-grid label {
+   grid-column: 1; /* Placeras i första kolumnen */
+   align-self: center; /* Centrerar etiketten vertikalt */
+   font-weight: bold; /* Gör texten fet */
+   background-color: #007BFF; /* Blå bakgrundsfärg */
+   padding: 0.5rem; /* Avstånd runt texten */
+   color: white; /* Vit text */
+}
+
+
+/* Stilar för alla inmatningsfält */
+.form-grid input[type="text"],
+.form-grid input[type="email"],
+.form-grid input[type="number"],
+.form-grid textarea,
+.form-grid select {
+   grid-column: 2; /* Placeras i andra kolumnen */
+   padding: 0.5rem; /* Inre avstånd */
+   border: 1px solid #007BFF; /* Blå kantlinje */
+   border-radius: 4px; /* Rundade hörn */
+   background-color: #ffffff; /* Vit bakgrundsfärg */
+}
+
+
+/* Stilar för textarea */
+textarea {
+   grid-row: 5 / 6; /* Placeras i rad 5 */
+   grid-column: 2; /* Placeras i andra kolumnen */
+   resize: vertical; /* Tillåter att användaren kan dra och ändra storlek vertikalt */
+}
+
+
+/* Stilar för knappen */
+.submit-container {
+   display: flex; /* Använder flexbox för att centrera knappen */
+   justify-content: center; /* Centrerar knappen horisontellt */
+   margin-top: 2rem; /* Avstånd ovanför knappen */
+}
+
+
+input[type="submit"] {
+   padding: 0.75rem; /* Inre avstånd i knappen */
+   background-color: #007BFF; /* Blå bakgrundsfärg */
+   color: white; /* Vit text */
+   border: none; /* Ingen kantlinje */
+   border-radius: 4px; /* Rundade hörn */
+   cursor: pointer; /* Muspekaren blir en hand vid hover */
+   width: 50%; /* Knappen tar upp halva bredden på sin container */
+}
+
+
+input[type="submit"]:hover {
+   background-color: #0056b3; /* Mörkare blå färg när man för musen över knappen */
+}
+
+
+/* Media Queries för att anpassa layouten till mindre skärmar */
+@media (max-width: 768px) {
+   .about {
+       flex-direction: column; /* Ändrar layouten till att vara vertikal på mindre skärmar */
+       text-align: center; /* Centrera texten */
+   }
+
+
+   .profile-image {
+    margin-bottom: 20px; /* Lägger till mellanrum under bilden */
+}
+
+
+.form-grid {
+    grid-template-columns: 1fr; /* Gör att formuläret blir en kolumn istället för två */
+}
+
+
+main {
+    margin: 20px; /* Mindre marginal på sidorna för att få plats på små skärmar */
+}
+}
