@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sales Form - Enhanced Grid Layout</title>
+    <!-- Länk till CSS filen -->
+<link rel="stylesheet" href="style.css"></head>
+<body>
+    <!-- En huvudcontainer där vi har formuläret i en grid-layout -->
+    <main class="grid-container">
+        <!-- Sektion som innehåller formuläret för att kontakta vårt säljteam -->
+        <section class="contact-form">
+            <!-- Rubriken för kontaktformuläret -->
+            <h1>Contact Our Sales Team</h1>
+            <!-- Själva formuläret börjar här -->
+            <form>
+                <!-- Använder grid-layout för att organisera fälten och etiketterna -->
+                <div class="form-grid">
+                    <!-- Etikett och inmatningsfält för förnamn -->
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" required>
+
+                    <!-- Etikett och inmatningsfält för efternamn -->
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" required>
+
+                    <!-- Etikett och inmatningsfält för e-postadress -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Etikett och inmatningsfält för ålder -->
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+
+                    <!-- Etikett och textfält för att skriva om sig själv -->
+                    <label for="about">About Me:</label>
+                    <textarea id="about" name="about"></textarea>
+
+                    <!-- Etikett och dropdown för att välja kön -->
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <!-- Etikett och dropdown för att välja konsult -->
+                    <label for="consultant">Choose Consultant:</label>
+                    <select id="consultant" name="consultant" required>
+                        <option value="adel">Adel</option>
+                        <option value="lisa">Linda</option>
+                        <option value="max">Max</option>
+                    </select>
+                </div>
+
+                <!-- En knapp som användaren kan trycka på för att skicka formuläret -->
+                <div class="submit-container">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

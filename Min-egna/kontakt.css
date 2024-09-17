@@ -1,0 +1,135 @@
+form label{
+    color: #444;
+
+}
+
+
+
+
+.box{
+    display: flex;
+    margin: 5rem 5rem 0 5rem;
+    width: 90%;
+}
+
+.box1{
+    flex-basis: 60%;
+    margin-right: 2rem;
+}
+
+.box2{
+    text-align: center;
+    flex-basis: 40%;
+}
+
+.main-container1{
+    display: flex;
+}
+
+
+img{
+    display: none;
+}
+
+img.show{
+    display: inline;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+        "förnamn efternamn"
+        "email email"
+        "ålder meddelande"
+        "kön meddelande"
+        "konsult meddelande"
+        "submit .";
+    gap: 1em;
+    font-size: 2rem;
+}
+
+input{
+    font-size: 2rem;
+    border-radius: 10px;
+    margin-top: .5rem;
+    color: #444;
+    border: #444 2px solid;
+}
+
+select{
+    font-size: 2rem;
+    border-radius: 10px;
+    margin-top: .5rem;
+    color: #444;
+    border: #444 2px solid;
+}
+
+textarea{
+    border-radius: 10px;
+    color: #444;
+    border: #444 2px solid;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 0;
+    margin: 0;
+}
+
+#slider::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: #444 2px solid;
+    
+}
+
+#slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.förnamn, .efternamn, .email, .ålder, .meddelande, .konsult, .kön{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.förnamn{
+    grid-area: förnamn;
+}
+
+.efternamn{
+    grid-area: efternamn;
+}
+
+.email{
+    grid-area: email;
+}
+
+.ålder{
+    grid-area: ålder;
+}
+
+.kön{
+    grid-area: kön;
+}
+
+.meddelande{
+    grid-area: meddelande;
+}
+
+.konsult{
+    grid-area: konsult;
+}
+
+.submit{
+    grid-area: submit;
+    text-align: center;
+}
+
+.meddelande{
+    box-sizing: border-box;
+}
