@@ -5,7 +5,7 @@ body {
     background-position: center;
 }
 
-.container3 {
+.sidoflik {
     font-family: 'Space Mono';
     background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(251, 250, 250));
     -webkit-background-clip: text;
@@ -23,7 +23,7 @@ body {
     text-align: center;
     max-width: 213px;
     width: 100%;
-    height: 323px;
+    height: 383px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-    background: rgb(243, 210, 243); 
+    background: rgb(243, 210, 243);
     -webkit-text-fill-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -91,24 +91,21 @@ p {
     font-size: 15px;
 }
 
-.container4 {
+.video {
     display: flex;
     text-align: center;
     justify-content: center;
     margin-top: 5rem;
-    gap: 5rem;
-}
-
-.youtube {
- 
+    gap: 3rem;
+    margin-right: 15rem;
 }
 
 .about-text {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%; 
-    max-width: 600px; 
+    width: 50%;
+    max-width: 400px;
 
 }
 
@@ -119,7 +116,7 @@ p {
     align-items: center;
     height: 43em;
     position: relative;
-    width: 65rem;
+    width: 63rem;
 }
 
 .square {
@@ -154,15 +151,16 @@ p {
 
 .bild-på-linda {
     width: 100%;
+   
 }
 
-.container1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 80vh;
+.footer p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Space Mono';
+    background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(243, 239, 243));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer {
@@ -170,6 +168,116 @@ p {
     height: 30vh;
     justify-content: center;
     align-items: center;
-    background-color: #95699e;
+    background: -webkit-linear-gradient(rgb(238, 203, 223), rgb(218, 109, 172));
     color: azure;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
 }
+
+.footer-content {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;/ padding: 0;
+}
+
+.linkedinicon {
+    height: 2rem;
+    width: 2.5rem;
+}
+
+.nummer:hover {
+    color: blue;
+    cursor: pointer;
+}
+.gmail {
+    height: 25px;
+    width: 55px;
+}
+ 
+@media only screen and (max-width: 600px) {
+    .p-box {
+      max-width: 150px;
+      height: auto;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    .square {
+      font-size: 20px; 
+      padding: 30px;
+      border-radius: 100px;
+    }
+  
+    .video {
+      flex-direction: column; 
+      margin-right: 0;
+    }
+  
+    .about-text {
+      width: 100%; 
+    }
+  
+    iframe {
+      width: 100%; 
+      height: auto;
+    }
+  }
+  
+ 
+  @media only screen and (max-width: 900px) {
+    .p-box {
+      max-width: 180px; 
+    }
+  
+    h1 {
+      font-size: 1.4rem; 
+    }
+  
+    .square {
+      font-size: 25px;
+      padding: 40px;
+      border-radius: 150px;
+    }
+  
+    .video {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .about-text {
+      width: 70%; 
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .p-box {
+      max-width: 250px; 
+    }
+  
+    h1 {
+      font-size: 2rem; 
+    }
+  
+    .square {
+      font-size: 30px;
+      padding: 60px;
+      border-radius: 200px;
+    }
+  
+    .about-text {
+      width: 60%; 
+    }
+  }
+  
+  
+  
