@@ -6,16 +6,15 @@
     <title>Contact Sales Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="kontakt.css">
-    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet">
     <script src="./webbutvecklarna.js" defer></script>
 
 </head>
 <body>
     <header>
-       
-        <li><a href="index.html" ><h1 data-value="WEBBUTVECKLARNA">WEBBUTVECKLARNA</h1></a></li>
-       
+        <ul>
+            <li><a href="index.html" ><h1 data-value="WEBBUTVECKLARNA">WEBBUTVECKLARNA</h1></a></li>
+        </ul>
     </header>
 
 <main>
@@ -25,43 +24,38 @@
                 <div class="contact-form">
                     <form>
                         <div class="grid">
-                            <div class="box0 förnamn"><label>Förnamn</label> <input type="text" required></div>
-                            <div class="box0 efternamn"><label>Efternamn</label><input type="text" required></div>
-                            <div class="box0 email"><label>Email</label><input type="email" required></div> 
+                            <div class="box0 förnamn"><label>Förnamn</label> <input type="text" id="fname" name="firstname" required></div>
+                            <div class="box0 efternamn"><label>Efternamn</label><input type="text" id="lname" name="lastname" required></div>
+                            <div class="box0 email"><label>Email</label><input type="email" id="email" name="email" required></div> 
                             <div class="box0 ålder"><label>Ålder</label><input type="range" id="slider" min="18" max="100" onchange="changeSliderValue(this.value)"><label id="ålder1">18 år</label></div>
                             <div class="box0 meddelande"><label>Meddelande</label><textarea></textarea></div>
-                            <div class="box0 kön"><label for="gender">Kön</label> 
-                            <select type="gender">
+                            <div class="box0 kön"><label>Kön</label> 
+                            <select id="gender" name="gender">
                                 <option disabled selected value>Välj kön</option>
                                 <option value="male">Man</option>
                                 <option value="female">Kvinna</option> 
                             </select></div>
                             
                             <div class="box0 konsult"><label>Konsult</label> 
-                                <select type="konsult" name="inputType" required>
+                                <select name="inputType" required>
                                     <option disabled selected value>Välj konsult</option>
                                     <option value="adel">Adel</option>
                                     <option value="linda">Linda</option>
                                     <option value="max">Max</option>
                                 </select>
                             </div>
-                            <div class="box0 submit"><input style="cursor: pointer;" type="submit" value="Skicka"></div>
+                            <div class="box0 submit"><input style="cursor: pointer;" type="submit" value="SUBMIT"></div>
                             
                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                         </div>
-                            
-                            
-                     
-
-                        
                     </form>
                 </div>
             </div>
 
             <div class="box2">
-                <img src="./avatar3.jpg" id="adelBild">
-                <img src="./avatar2.jpg" id="lindaBild">
-                <img src="./avatar1.jpg" id="maxBild">
+                <img src="./avatar3.jpg" id="adelBild" alt="Bild på Adel">
+                <img src="./avatar2.jpg" id="lindaBild" alt="Bild på Linda">
+                <img src="./avatar1.jpg" id="maxBild" alt="Bild på Max">
                        
                         
             </div>
