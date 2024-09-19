@@ -5,7 +5,7 @@ body {
     background-position: center;
 }
 
-.sidoflik {
+.rubrik {
     font-family: 'Space Mono';
     background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(251, 250, 250));
     -webkit-background-clip: text;
@@ -34,7 +34,7 @@ body {
 button {
     font-family: 'Space Mono', monospace;
     background: linear-gradient(135deg, rgb(243, 210, 243), rgb(239, 220, 236));
-    background-clip: text;
+    background: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border: 1px solid rgb(243, 210, 243);
@@ -158,7 +158,7 @@ p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     font-family: 'Space Mono';
-    background: -webkit-linear-gradient(rgb(243, 200, 243), rgb(243, 239, 243));
+    background-clip: -webkit-linear-gradient(rgb(243, 200, 243), rgb(243, 239, 243));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -200,8 +200,4 @@ p {
 .gmail {
     height: 25px;
     width: 55px;
-}
- 
-  
-  
-  
+} 
