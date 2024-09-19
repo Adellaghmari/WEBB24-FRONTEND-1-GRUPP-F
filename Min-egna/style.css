@@ -82,7 +82,9 @@ footer ul li, a{
 .sidebar{
     margin: 5rem 0 0 5rem;
     max-width: 100%;
+    min-width: 17%;
     width: 20rem;
+    
 }
 
 .sidebar ul{

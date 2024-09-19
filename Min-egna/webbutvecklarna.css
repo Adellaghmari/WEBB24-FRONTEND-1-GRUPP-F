@@ -28,7 +28,6 @@
 .flex{
     display: flex;
     margin-right: 3rem;
-    
 }
 
 .image-container{
@@ -82,7 +81,7 @@
 
 
 
-@media only screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
     .main-container{
         flex-wrap: wrap;
     }
@@ -107,5 +106,4 @@
     opacity: 1;
    }
 
-   
-  }
+}

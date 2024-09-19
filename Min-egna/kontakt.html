@@ -25,20 +25,20 @@
                 <div class="contact-form">
                     <form>
                         <div class="grid">
-                            <div class="box0 förnamn"><label for="fname">Förnamn</label> <input type="text" id="fname" name="firstname" required></div>
-                            <div class="box0 efternamn"><label for="lname">Efternamn</label><input type="text" id="lname" name="lastname" required></div>
-                            <div class="box0 email"><label for="email">Email</label><input type="email" id="email" name="email" required></div> 
-                            <div class="box0 ålder"><label for="age">Ålder</label><input type="range" id="slider" min="18" max="100" onchange="changeSliderValue(this.value)"><label id="ålder1">18 år</label></div>
-                            <div class="box0 meddelande"><label for="about">Meddelande</label><textarea type="about" id="about" name="about"></textarea></div>
+                            <div class="box0 förnamn"><label>Förnamn</label> <input type="text" required></div>
+                            <div class="box0 efternamn"><label>Efternamn</label><input type="text" required></div>
+                            <div class="box0 email"><label>Email</label><input type="email" required></div> 
+                            <div class="box0 ålder"><label>Ålder</label><input type="range" id="slider" min="18" max="100" onchange="changeSliderValue(this.value)"><label id="ålder1">18 år</label></div>
+                            <div class="box0 meddelande"><label>Meddelande</label><textarea></textarea></div>
                             <div class="box0 kön"><label for="gender">Kön</label> 
-                            <select type="gender" id="gender" name="gender">
+                            <select type="gender">
                                 <option disabled selected value>Välj kön</option>
                                 <option value="male">Man</option>
                                 <option value="female">Kvinna</option> 
                             </select></div>
                             
-                            <div class="box0 konsult"><label for="consultant">Konsult</label> 
-                                <select type="konsult" name="inputType" form="carform" class="form-control" id="inputType" name="inputType" title="inputType" required>
+                            <div class="box0 konsult"><label>Konsult</label> 
+                                <select type="konsult" name="inputType" required>
                                     <option disabled selected value>Välj konsult</option>
                                     <option value="adel">Adel</option>
                                     <option value="linda">Linda</option>
